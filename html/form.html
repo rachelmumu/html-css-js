@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+    <h2>表单</h2>
+
+    <form action="from-submit.html" method="get">
+        <!-- 文本输入框 -->
+        <label for="name">用户名:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+
+        <!-- 密码输入框 -->
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+
+        <!-- 单选按钮 -->
+        <label>性别:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label>
+
+        <br>
+
+        <!-- 复选框 -->
+		<label>订阅服务:</label>
+        <input type="checkbox" id="news" name="service">
+        <label for="news">新闻</label>
+		<input type="checkbox" id="music" name="service">
+        <label for="music">音乐</label>
+
+        <br>
+
+        <!-- 下拉列表 -->
+        <label for="country">国家:</label>
+        <select id="country" name="country">
+            <option value="cn">CN</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+
+        <br>
+
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+    </form>
+
+</body>
+</html>
