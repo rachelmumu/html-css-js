@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    color: white;
+}
+
+.key-block {
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid pink;
+    background-color: pink;
+    padding: 4px;
+}
+
+.move {
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+.explosion div {
+    animation-name: explosion;
+    animation-duration: 250ms;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+}
+
+.panel.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 100vh);
+    }
+}
+
+@keyframes explosion {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
