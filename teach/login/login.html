@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="user">账号：</label>
+            <input type="text" id="user" name="username" required>
+        </div>
+
+        <div>
+            <label for="pwd">密码：</label>
+            <input type="password" id="pwd" name="password" required>
+        </div>
+
+        <div class="login-button-container">
+            <button type="submit">登录</button>
+        </div>
+        <div class="error-message">账号或密码错误</div>
+    </form>
+    <div class="login-in-succeed">
+        <div class="welcome">欢迎回来：<span class="login-user">xxx</span></div>
+    </div>
+    <script src="login-check.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
